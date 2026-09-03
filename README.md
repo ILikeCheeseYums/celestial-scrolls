@@ -45,17 +45,3 @@ Right now, I'm focusing on strengthening my math background (calculus, linear al
 ---
 
 Shwetank · 2026
-
-## Development
-
-```sh
-npm install
-npm run dev
-```
-
-To build for production:
-
-```sh
-npm run build
-npm run preview
-```
