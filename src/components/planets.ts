@@ -25,6 +25,6 @@ export const LATERAL = 5.5;
 
 export function planetPosition(i: number): [number, number, number] {
   const p = PLANETS[i];
-  if (i === 0) return [0, 0, 0];
+  if (i === 0 || !p) return [0, 0, 0];
   return [p.side * LATERAL, i % 3 === 0 ? 1.8 : -1.4, -i * SPACING];
 }
