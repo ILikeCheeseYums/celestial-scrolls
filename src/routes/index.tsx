@@ -144,7 +144,7 @@ function Index() {
         />
       </div>
 
-      <nav className="fixed right-5 top-1/2 z-20 hidden -translate-y-1/2 flex-col gap-3 md:flex">
+      <nav className="fixed right-5 top-1/2 z-20 hidden -translate-y-1/2 flex-col gap-3.5 rounded-full border border-white/15 border-t-white/30 bg-white/[0.04] p-3 shadow-[0_16px_36px_rgba(0,0,0,0.5),inset_0_1px_1px_rgba(255,255,255,0.25)] backdrop-blur-2xl md:flex">
         {PLANETS.map((p, i) => {
           const active = Math.round(progress * (PLANETS.length - 1)) === i;
           return (
@@ -154,10 +154,10 @@ function Index() {
               title={p.name}
               aria-label={p.name}
               className={[
-                "h-2.5 w-2.5 rounded-full border transition-all",
+                "h-2.5 w-2.5 rounded-full border transition-all duration-300",
                 active
-                  ? "scale-150 border-primary bg-primary"
-                  : "border-muted-foreground/50 bg-transparent hover:bg-muted-foreground/50",
+                  ? "scale-150 border-primary bg-primary shadow-[0_0_12px_rgba(255,182,72,0.6)]"
+                  : "border-white/30 bg-transparent hover:border-white/70 hover:bg-white/30",
               ].join(" ")}
             />
           );
@@ -255,12 +255,9 @@ function Index() {
             Always up for talking about ML, math, or messy datasets.
           </p>
           <div className="mt-6 flex flex-col gap-3">
-            <a
-              href="mailto:shwetanks860@gmail.com"
-              className="group flex items-center justify-between rounded-xl border border-border bg-secondary/40 px-5 py-4 transition-colors hover:border-primary"
-            >
+            <a href="mailto:shwetanks860@gmail.com" className="group glass-button">
               <span className="font-mono text-sm">shwetanks860@gmail.com</span>
-              <span className="text-muted-foreground transition-transform group-hover:translate-x-1">
+              <span className="text-muted-foreground transition-transform duration-300 group-hover:translate-x-1 group-hover:text-primary">
                 →
               </span>
             </a>
@@ -268,10 +265,10 @@ function Index() {
               href="https://github.com/ILikeCheeseYums"
               target="_blank"
               rel="noreferrer"
-              className="group flex items-center justify-between rounded-xl border border-border bg-secondary/40 px-5 py-4 transition-colors hover:border-primary"
+              className="group glass-button"
             >
               <span className="font-mono text-sm">github.com/ILikeCheeseYums</span>
-              <span className="text-muted-foreground transition-transform group-hover:translate-x-1">
+              <span className="text-muted-foreground transition-transform duration-300 group-hover:translate-x-1 group-hover:text-primary">
                 →
               </span>
             </a>
