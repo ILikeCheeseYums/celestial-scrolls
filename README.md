@@ -1,5 +1,3 @@
-# Celestial Scrolls
-
 # Shwetank
 
 > **1st year B.Tech · AI & Machine Learning**  
